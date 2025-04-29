@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Yamyy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+        }
+        
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .opening-line {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            font-style: italic;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s ease forwards 0.5s;
+        }
+        
+        .quote {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        
+        .quote.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .quote-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .quote-author {
+            text-align: right;
+            font-weight: 300;
+        }
+        
+        .highlight {
+            color: #ff9a9e;
+            font-weight: bold;
+        }
+        
+        .hidden-note {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 154, 158, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .hidden-note:hover {
+            transform: scale(1.1);
+        }
+        
+        .note-content {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            color: #333;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 100;
+        }
+        
+        .note-content h3 {
+            margin-top: 0;
+            color: #ff9a9e;
+        }
+        
+        .heart {
+            position: absolute;
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            font-size: 2rem;
+            color: #ff9a9e;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .opening-line {
+                font-size: 1.2rem;
+            }
+            
+            .quote-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <div class="container">
+        <header>
+            <h1>For Yamyy</h1>
+            <div class="opening-line">Hyy sweetest Yamyy</div>
+        </header>
+        
+        <div class="quote">
+            <p class="quote-text">"To be loved by someone is to realize how much they share the same need, the same loneliness, the same fear, the same hope." <span class="highlight">Yamyy</span>, you've shown me that in your eyes.</p>
+            <p class="quote-author">— Inspired by Franz Kafka</p>
+        </div>
+        
+        <div class="quote">
+            <p class="quote-text">"The soul is healed by being with children and with those who love purely. <span class="highlight">Yamyy</span>, your presence heals me in ways words cannot express."</p>
+            <p class="quote-author">— Inspired by Fyodor Dostoevsky</p>
+        </div>
+        
+        <div class="quote">
+            <p class="quote-text">"Love is so precious that even in the darkest night, it shines like a thousand stars. <span class="highlight">Yamyy</span>, you are my constellation."</p>
+            <p class="quote-author">— For You</p>
+        </div>
+        
+        <div class="quote">
+            <p class="quote-text">"To love is to see the eternal in the momentary, the infinite in the finite. <span class="highlight">Yamyy</span>, every moment with you feels eternal."</p>
+            <p class="quote-author">— Inspired by Dostoevsky</p>
+        </div>
+        
+        <div class="quote">
+            <p class="quote-text">"I think we ought to read only the kind of books that wound or stab us. But <span class="highlight">Yamyy</span>, your love is the only story I want to read again and again, even if it breaks me with its beauty."</p>
+            <p class="quote-author">— Inspired by Franz Kafka</p>
+        </div>
+    </div>
+    
+    <div class="hidden-note">💌</div>
+    <div class="note-content">
+        <h3>My Secret Note</h3>
+        <p>Dear Yamyy,</p>
+        <p>From the moment I met you, I knew there was something extraordinary about you. Your laughter, your kindness, the way you see the world - it all captivates me.</p>
+        <p>This is more than just a website. It's my heart, coded into existence. Will you let me love you for all the days to come?</p>
+        <p>With all my love,</p>
+        <p>Always Yours</p>
+    </div>
+    
+    <audio id="bgMusic" loop>
+        <source src="sweet.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
+    <script>
+        // Initialize particles.js
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": true,
+                        "speed": 2,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 1,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+        
+        // Show quotes on scroll
+        const quotes = document.querySelectorAll('.quote');
+        
+        function checkQuotes() {
+            quotes.forEach(quote => {
+                const quotePosition = quote.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (quotePosition < screenPosition) {
+                    quote.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', checkQuotes);
+        window.addEventListener('load', checkQuotes);
+        
+        // Hidden note toggle
+        const noteBtn = document.querySelector('.hidden-note');
+        const noteContent = document.querySelector('.note-content');
+        
+        noteBtn.addEventListener('click', () => {
+            if (noteContent.style.display === 'block') {
+                noteContent.style.display = 'none';
+            } else {
+                noteContent.style.display = 'block';
+            }
+        });
+        
+        // Heart effect on long press
+        document.addEventListener('mousedown', function(e) {
+            if (e.target === noteBtn || e.target === noteContent) return;
+            
+            let timer;
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '❤️';
+            document.body.appendChild(heart);
+            
+            timer = setTimeout(() => {
+                heart.style.left = e.pageX + 'px';
+                heart.style.top = e.pageY + 'px';
+                heart.style.opacity = '1';
+                
+                setTimeout(() => {
+                    heart.style.opacity = '0';
+                    heart.style.transform = 'translate(-50%, -50%) scale(2)';
+                    
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 1000);
+                }, 500);
+            }, 800);
+            
+            document.addEventListener('mouseup', function() {
+                clearTimeout(timer);
+                heart.remove();
+            });
+        });
+        
+        // Background music
+        const sound = new Howl({
+            src: ['sweet.mp3'],
+            volume: 0.3,
+            onplayerror: function() {
+                sound.once('unlock', function() {
+                    sound.play();
+                });
+            }
+        });
+        
+        // Start music on first interaction
+        function enableAudio() {
+            sound.play();
+            document.removeEventListener('click', enableAudio);
+            document.removeEventListener('touchstart', enableAudio);
+        }
+        
+        document.addEventListener('click', enableAudio);
+        document.addEventListener('touchstart', enableAudio);
+    </script>
+</body>
+</html>
